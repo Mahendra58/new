@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Divs Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 10px;
+            align-items: center;
+        }
+        .div1 {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+            align-self: center;
+            background-color: red;
+            width: 80%; /* Increased width */
+            text-align: center; /* Center align text */
+        }
+        .div2-3-container {
+            display: flex;
+            width: 100%;
+        }
+        .div2, .div3 {
+            border: 1px solid black;
+            padding: 10px;
+            width: 45%;
+            margin: 0 2.5%;
+        }
+        .div2 {
+            background-color: white; /* White background color */
+            height: 300px; /* Increased height */
+            justify-content: flex-end;
+        }
+        .div3 {
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">Div 1</div>
+        <div class="div2-3-container">
+            <div class="div2">Names</div>
+            <div class="div3">Div 3</div>
+        </div>
+    </div>
+</body>
+</html>
